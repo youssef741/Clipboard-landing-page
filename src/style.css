@@ -382,7 +382,13 @@ body {
     }
   }
   .features_logos {
+    margin-block-start: 5.625em;
     grid-column: var(--grid-clo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.375em;
+    flex-direction: column;
   }
 }
 
