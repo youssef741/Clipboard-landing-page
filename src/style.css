@@ -90,6 +90,7 @@ h6 {
   --space-gap: 20px;
   --col-count: 2;
   --grid-clo: 2/4;
+  --p-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
   --margin-block: 9.375em;
   --margin-bottom: 4.375em;
 }
@@ -139,12 +140,12 @@ body {
   .Nav__title {
     text-align: center;
     grid-column: 2/4;
-    font-size: 1.875rem;
+    font-size: clamp(1.875rem, 1.5669rem + 1.3146vw, 2.75rem);
     color: var(--gray700);
     font-weight: 600;
   }
   .Nav_description {
-    font-size: 1.05rem;
+    font-size: var(--p-size);
     text-align: center;
     grid-column: var(--grid-clo);
     color: var(--gray500);
@@ -193,7 +194,7 @@ body {
     padding: 0.625em;
     grid-column: var(--grid-clo);
     .content_title {
-      font-size: 1.5625rem;
+      font-size: clamp(1.5625rem, 1.3424rem + 0.939vw, 2.1875rem);
       text-wrap: wrap;
       font-weight: 600;
       text-align: center;
@@ -201,7 +202,7 @@ body {
     }
     .content_description {
       text-align: center;
-      font-size: 1.05rem;
+      font-size: var(--p-size);
       font-weight: 400;
       color: var(--gray500);
     }
@@ -218,7 +219,7 @@ body {
     margin-bottom: var(--margin-bottom);
 
     .search_title {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
@@ -236,29 +237,29 @@ body {
     margin-bottom: var(--margin-bottom);
 
     .icloud_title {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .icloud_description {
-      font-size: 1.05rem;
+      font-size: 0.9375rem;
       text-align: center;
       color: var(--gray500);
     }
   }
   .hero_history {
     display: grid;
-    gap: 20px;
+    gap: 1.25em;
     grid-column: var(--grid-clo);
     .history_title {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .history_description {
-      font-size: 1.05rem;
+      font-size: 0.9375rem;
       text-align: center;
       color: var(--gray500);
     }
@@ -274,13 +275,13 @@ body {
     grid-column: var(--grid-clo);
     .testimonials_title {
       text-wrap: wrap;
-      font-size: 1.5rem;
+      font-size: clamp(1.5625rem, 1.3424rem + 0.939vw, 2.1875rem);
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .testimonials_description {
-      font-size: 1.05rem;
+      font-size: var(--p-size);
       text-align: center;
       color: var(--gray500);
     }
@@ -300,14 +301,14 @@ body {
     grid-column: var(--grid-clo);
     .content_title {
       text-wrap: wrap;
-      font-size: 1.5rem;
+      font-size: clamp(1.5625rem, 1.3644rem + 0.8451vw, 2.125rem);
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
 
     .content_description {
-      font-size: 1.05rem;
+      font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
       text-align: center;
       color: var(--gray500);
     }
@@ -327,13 +328,13 @@ body {
       width: var(--icon-size);
     }
     .blacklist_title {
-      font-size: 1.5rem;
+      font-size: 1.5625rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .blacklist_description {
-      font-size: 1.05rem;
+      font-size: 1.125rem;
       text-align: center;
       color: var(--gray500);
     }
@@ -349,13 +350,13 @@ body {
       width: var(--icon-size);
     }
     .plain_title {
-      font-size: 1.5rem;
+      font-size: 1.5625rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .plain_description {
-      font-size: 1.05rem;
+      font-size: 1.125rem;
       text-align: center;
       color: var(--gray500);
     }
@@ -370,13 +371,13 @@ body {
       width: var(--icon-size);
     }
     .preview_title {
-      font-size: 1.5rem;
+      font-size: 1.5625rem;
       font-weight: 600;
       text-align: center;
       color: var(--gray700);
     }
     .preview_description {
-      font-size: 1.05rem;
+      font-size: 1.125rem;
       text-align: center;
       color: var(--gray500);
     }
